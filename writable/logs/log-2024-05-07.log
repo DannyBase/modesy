@@ -1,0 +1,17 @@
+CRITICAL - 2024-05-07 18:45:36 --> Class "file" not found
+in SYSTEMPATH\Config\Services.php on line 685.
+ 1 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 2 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 3 SYSTEMPATH\Config\Services.php(663): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+ 5 APPPATH\Config\Globals.php(32): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 6 APPPATH\Config\Globals.php(153): Config\Globals::setGlobals()
+ 7 SYSTEMPATH\Autoloader\Autoloader.php(306): include_once('C:\\xampp\\htdocs\\modesy-v2.4.3\\app\\Config\\Globals.php')
+ 8 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\modesy-v2.4.3\\app\\Config\\Globals.php')
+ 9 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Globals')
+10 APPPATH\Config\Routes.php(6): CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Globals')
+11 SYSTEMPATH\Router\RouteCollection.php(339): require('C:\\xampp\\htdocs\\modesy-v2.4.3\\app\\Config\\Routes.php')
+12 SYSTEMPATH\CodeIgniter.php(786): CodeIgniter\Router\RouteCollection->loadRoutes()
+13 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+14 SYSTEMPATH\CodeIgniter.php(352): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(95): CodeIgniter\CodeIgniter->run()

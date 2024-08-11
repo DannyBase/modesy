@@ -1,0 +1,12 @@
+CRITICAL - 2024-04-30 08:49:48 --> GD Library extension not available with this PHP installation.
+in APPPATH\ThirdParty\intervention-image\vendor\intervention\image\src\Intervention\Image\Gd\Driver.php on line 19.
+ 1 APPPATH\ThirdParty\intervention-image\vendor\intervention\image\src\Intervention\Image\ImageManager.php(112): Intervention\Image\Gd\Driver->__construct()
+ 2 APPPATH\ThirdParty\intervention-image\vendor\intervention\image\src\Intervention\Image\ImageManager.php(54): Intervention\Image\ImageManager->createDriver()
+ 3 APPPATH\ThirdParty\intervention-image\vendor\intervention\image\src\Intervention\Image\ImageManagerStatic.php(58): Intervention\Image\ImageManager->make('uploads/temp/temp_6630a29cc03c03-59118268.jpg')
+ 4 APPPATH\Models\UploadModel.php(79): Intervention\Image\ImageManagerStatic::make('uploads/temp/temp_6630a29cc03c03-59118268.jpg')
+ 5 APPPATH\Models\FileModel.php(73): App\Models\UploadModel->uploadProductDefaultImage('uploads/temp/temp_6630a29cc03c03-59118268.jpg', 'temp')
+ 6 APPPATH\Controllers\FileController.php(33): App\Models\FileModel->uploadImageSession()
+ 7 SYSTEMPATH\CodeIgniter.php(918): App\Controllers\FileController->uploadImageSession()
+ 8 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileController))
+ 9 SYSTEMPATH\CodeIgniter.php(352): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(95): CodeIgniter\CodeIgniter->run()
